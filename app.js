@@ -65,10 +65,197 @@ switch (age) {
         break;
     default:
         console.log("Your age is not special "+ age);
-} 
+}
 */
 
 /*
 let age = 19;
 console.log("you can", age<18? "not drive":"drive");//This is called ternory operator..
+*/
+
+
+// let person = "Moazzam khan";
+// switch (person) {
+//     case "ali":
+//         console.log("Hello Ali");
+//     case "Ahmed":
+//         console.log("Hello Ahmed");
+//     case "Moazzam khan":
+//         console.log("Hello Moazzam khan");
+//         break;
+//     default:
+//         alert("hello, handsome");
+// }
+
+
+//    For In Loop   //
+
+
+// const obj = {
+//     ali : 78,
+//     ahmed : 60,
+//     muneeb : 50,
+//     raza : 76,
+//     sara : 83,
+// }
+
+// for(let a in obj){
+//     console.log(obj[a]);
+// }
+
+//    For of Loop   //
+
+/*
+let arr = ["Muhamad", "Moazzam", "Khan"]
+for (let b of arr) {
+    console.log(b)
+}
+*/
+
+
+//    while Loop   //
+
+// let num = prompt("Eter the any value");
+// num = Number.parseFloat(num);
+
+// let i = 0;
+// while(i < num){
+//     i++;
+//     console.log(i+1);
+// }
+
+
+//    do while Loop   //
+
+/*
+let n = prompt("Enter the any value");
+n = Number.parseFloat(n);
+
+let j = 0;
+do{
+    console.log(j)
+ j++
+}while(j < n)
+
+*/
+/* 
+let reportCard = {
+    ali : 89,
+    ghous : 56,
+    sara : 65,
+}
+
+for(let j in reportCard){
+    console.log(reportCard[j]);
+}
+ let arr = Object.keys(reportCard);
+ arr.forEach((argument)=>{
+     console.log(argument);
+ })
+
+ */
+
+/* 
+for(let i = 0; i < Object.keys(reportCard).length;i++ ){
+   console.log("Ther marks of "+ Object.keys(reportCard)[i] + " are " + reportCard[Object.keys(reportCard)[i]]);
+}
+
+ for(let i in reportCard){
+    console.log("The marks of "+ i + " are " + reportCard[i]);
+ } */
+
+
+/*
+
+let num = 3;
+let i;
+while(i != num){
+   console.log("try again")
+   i = prompt("Enter the correct number");
+}
+console.log("you have entered the correct number")
+*/
+
+
+/*
+const mean = (a,b,c,d,e)=>{
+    return  (a+b+c+d+e)/2;
+}
+console.log(mean(2,3,4,5,6));
+*/
+
+// let friut = 'bana\ra';
+// console.log(friut.length)
+/* 
+let compare =(a,b) =>{
+    return b -a ;
+}
+
+let arr = [34,34,2,43,23,342,234,4,234,23423,423,4];
+console.log(arr.sort()) */
+// arr.sort(compare);
+
+/* let arr = [3,2,3,5,6];
+
+arr.forEach((papakepari)=>{
+    console.log(papakepari*papakepari)
+})
+ */
+//  let name = 'Muhammad Moazzam Khan';
+// let a = Array.from(name);
+
+// /* let b = a.forEach((hello)=>{
+//     console.log(hello)
+// });
+// */
+
+// for(let i of a){
+//     console.log(i);
+// }
+
+
+//   Higer Arrry Method   //
+//       MAP    //
+/* 
+let arr = [2,3,7,3,5];
+let newarr = arr.map((value,index,arry)=>{
+    console.log(value +index,arry)
+    return arry
+})
+console.log(arr);
+console.log(newarr);
+
+
+ */
+
+//     Filter    // 
+/* let arr1 = [2, 3, 70, 3, 50];
+let newarr1 = arr1.filter((a)=>{
+    return a<10
+})
+console.log(newarr1)
+ */
+/* 
+let arr1 = [2, 3, 70, 3, 50];
+let newarr1 = (a)=>{
+    return a<10
+}
+console.log(arr1.filter(newarr1));
+ */
+
+
+//    Reduce    //
+
+/*
+let arr2 = [2, 3, 7, 3, 5];
+ let newarr2 = (a, b) => {
+    return a + b
+}
+console.log(arr2.reduce(newarr2));
+
+let newarr2 = arr2.reduce((a, b) => {
+    return a + b
+})
+console.log(newarr2);
+
 */
