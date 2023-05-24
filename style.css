@@ -1,0 +1,32 @@
+.red {
+    background-color: red;
+    color: #fff;
+}
+
+.yellow {
+    background-color: yellow;
+    color: #fff;
+}
+
+.blue {
+    background-color: blue;
+    color: #fff;
+}
+.text-dark{
+    color: black;
+}
+
+.bulb-on{
+    width: 231px;
+    height: 231px;
+    font-size: xx-large;
+    color: yellow;
+}
+
+.bulb-off{
+    width: 231px;
+    font-size: xx-large;
+
+    height: 231px;
+    color: cyan;
+}

@@ -138,7 +138,7 @@ do{
 }while(j < n)
 
 */
-/* 
+/*
 let reportCard = {
     ali : 89,
     ghous : 56,
@@ -155,7 +155,7 @@ for(let j in reportCard){
 
  */
 
-/* 
+/*
 for(let i = 0; i < Object.keys(reportCard).length;i++ ){
    console.log("Ther marks of "+ Object.keys(reportCard)[i] + " are " + reportCard[Object.keys(reportCard)[i]]);
 }
@@ -186,7 +186,7 @@ console.log(mean(2,3,4,5,6));
 
 // let friut = 'bana\ra';
 // console.log(friut.length)
-/* 
+/*
 let compare =(a,b) =>{
     return b -a ;
 }
@@ -201,14 +201,13 @@ arr.forEach((papakepari)=>{
     console.log(papakepari*papakepari)
 })
  */
-//  let name = 'Muhammad Moazzam Khan';
-// let a = Array.from(name);
+/* let name = 'Muhammad Moazzam Khan';
+let a = Array.from(name);
 
-// /* let b = a.forEach((hello)=>{
-//     console.log(hello)
-// });
-// */
-
+let b = a.forEach((hello)=>{
+   console.log(hello)
+});
+*/
 // for(let i of a){
 //     console.log(i);
 // }
@@ -216,7 +215,7 @@ arr.forEach((papakepari)=>{
 
 //   Higer Arrry Method   //
 //       MAP    //
-/* 
+/*
 let arr = [2,3,7,3,5];
 let newarr = arr.map((value,index,arry)=>{
     console.log(value +index,arry)
@@ -228,14 +227,14 @@ console.log(newarr);
 
  */
 
-//     Filter    // 
+//     Filter    //
 /* let arr1 = [2, 3, 70, 3, 50];
 let newarr1 = arr1.filter((a)=>{
     return a<10
 })
 console.log(newarr1)
  */
-/* 
+/*
 let arr1 = [2, 3, 70, 3, 50];
 let newarr1 = (a)=>{
     return a<10
@@ -243,19 +242,282 @@ let newarr1 = (a)=>{
 console.log(arr1.filter(newarr1));
  */
 
-
-//    Reduce    //
-
+//    Reduce     //
 /*
-let arr2 = [2, 3, 7, 3, 5];
- let newarr2 = (a, b) => {
-    return a + b
-}
-console.log(arr2.reduce(newarr2));
-
-let newarr2 = arr2.reduce((a, b) => {
-    return a + b
+let arr1 = [2, 3, 70, 3, 50];
+let newarr2 = arr1.reduce((a,b)=>{
+    return a + b;
 })
 console.log(newarr2);
+ */
 
+
+//     END      //
+
+/* 
+let a = document.body.lastElementChild;
+let b = document.body.firstChild;
+let c = document.body.firstElementChild;
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(a.nextElementSibling)
+console.log(a.lastElementChild)
+console.log(document.body.lastChild)
+ */
+
+/* 
+let a = document.documentElement.parentNode;
+let b = document.body.firstElementChild;
+console.log(a)
+console.log(b.nextElementSibling.firstChild.nextSibling)
+ */
+//    table     //
+/* 
+let t = document.body.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild;
+console.log(t)
+console.log(t.rows)
+console.log(t.caption)
+console.log(t.tHead)
+console.log(t.tHead.firstElementChild)
+console.log(t.tFoot)
+console.log(t.tBodies)
+console.log(t.rows[0].rowIndex)
+console.log(t.rows[2].cells)
+console.log(t.rows.cellsIndex)
+ */
+
+/* 
+let id1 = document.querySelector("#id1");
+let id2 = document.querySelector("#id2");
+let sp1 = document.querySelector("#sp1") 
+
+
+//  matches    closest    contains   //
+
+console.log(id2.matches('.c2'));
+console.log(id2.closest("#mainId"));
+console.log(id2.contains(sp1));
+console.log(sp1.contains(sp1));
 */
+
+/* 
+let x = document.getElementsByTagName("span")[0];
+console.log(x);
+
+let y = document.getElementsByTagName("span")[0];
+console.dir(y);
+
+console.log(document.body.firstChild.nodeName);
+console.log(document.body.firstElementChild.nodeName);
+ */
+
+/* 
+console.log(jani.innerHTML)
+console.log(jani.innerHTML = "PAPAKEPARI")
+console.log(jani.outerHTML )
+console.log(jani.outerHTML = "<h1>PAPAKEPARI</h2>")
+ */
+/* 
+console.log(document.body.firstChild.data)
+console.log(document.body.firstChild.nodeValue) 
+console.log(document.body.textContent);
+hidden.hidden = false;
+ */
+
+
+//         attribue methods         //
+/* 
+let hello  = document.getElementById("hello");
+console.log(hello.getAttribute("class"));
+console.log(hello.hasAttribute("class"));
+console.log(hello.hasAttribute("style"));
+console.log(hello.setAttribute("hidden" , "true"));
+console.log(hello.setAttribute("class" , "class kalo"));
+console.log(hello.removeAttribute("class"));
+console.log(hello.removeAttribute("hidden"));
+console.log(hello.attributes);
+console.log(hello.dataset);
+console.log(hello.dataset.game);
+console.log(hello.dataset.player);
+ */
+
+
+//     HTML Insertion Methods    //
+/* 
+let b = document.getElementsByTagName("div")[0].setAttribute("id","div");
+let a = document.getElementById("div");
+div.innerHTML = "<h1 class='hey'>Hello world</h1>";
+let div = document.createElement("div")
+div.innerHTML = "<h1 class='hey'>Hello world</h1>";
+a.append(div);
+a.prepend(div);
+a.after(div);
+a.before(div);
+a.replaceWith(div);
+ */
+
+
+//    Insert Adjacent   //
+
+// first.insertAdjacentHTML("beforebegin","<div class='first'>hey i'm one</div>")
+// first.insertAdjacentHTML("beforeend","<div class='first'>hey i'm one</div>")
+// first.insertAdjacentHTML("afterbegin","<div class='first'>hey i'm one</div>")
+// first.insertAdjacentHTML("afterend","<div class='first'>hey i'm one</div>")
+// first.remove()
+
+
+//    CLasses method   //
+/* 
+first.className = "yellow text-dark blue";
+first.classList.add("blue");
+first.classList.remove("blue");
+first.classList.remove("yellow");
+first.classList.add("red");
+first.classList.toggle("red");
+console.log(first.classList.contains("red"))
+ */
+
+//    addEventlistener   //
+/* 
+let x =    (e) => {
+    // alert("hello")
+    console.log(e)
+    console.log(e.type ,e.clientX , e.clientY)
+}
+let y = (e)=>{
+    alert("hello")
+}
+ 
+btn.addEventListener("click", x)
+btn.addEventListener("click", y)
+btn.removeEventListener("click", x)
+ */
+
+//   call back  //
+/* 
+function loadScript(src ,callback){
+    let script = document.createElement("script")
+    script.src = src;
+    script.onload = function(){
+        console.log("Loaded script with SRC : "+ src)
+        callback(null , src);
+    }
+    script.onerror = function(){
+        console.log("error loading script with src: " + src)
+        callback(new Error("src got some error"),src)
+    }
+    document.body.append(script);
+}
+function hello(error ,src){
+    if(error){
+        console.log(error)
+    }
+    alert("hello \n" + src)
+}
+function goodNight(error , src){
+    if(error){
+        console.log(error)
+    }
+    alert("goodNight <br>" + src)
+}
+
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js", hello)
+ */
+
+//   callback hell/pyramit of dooms   //
+
+//sendEmergencyMessageToCeo()    // this method uses when some error while working callback and got some error ,so it send message to Ceo of office..
+
+
+//      Promises   //
+
+// let promise1 = new Promise((resolve, reject) => {
+//     console.log("Promis is pending")
+//     setTimeout(() => {
+//         console.log("resolved atfer 2 second resolved") 
+//         resolve(true)
+//     }, 2000);
+// })
+
+/* 
+let promise2 = new Promise((resolve,reject)=>{
+    console.log("Promis is pending")
+        setTimeout(() => {
+        console.log("resolved atfer 2 second resolved") 
+        resolve(true)
+    }, 2000);
+    setTimeout(() => {
+        console.log("resolved atfer 2 second rejected")
+        reject(new Error("I'm an error"))
+    }, 2000);
+})
+
+promise2.then((value)=>  {
+    setTimeout(() => {
+        console.log(value)
+    }, 5000)},(error)=>{
+        console.log(error)
+    })
+ */
+
+// },(error)=>{
+//     console.log(error)
+// })
+
+// promise2.catch((error)=>{
+//     console.log("Some error occured in p2 ")
+// })
+
+
+
+/* 
+let p = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve("done")
+    },1000)
+})
+
+p.then(alert);
+ */
+/* 
+const loadScript = (src)=>{
+    return new Promise ((resolve,reject)=>{
+    let srcipt = document.createElement("script");
+    srcipt.type = "text/javascript";
+    srcipt.src = src;
+    document.body.appendChild(srcipt)
+    srcipt.onload = ()=>{
+        resolve("script has been loaded")
+    }
+    srcipt.onerror = ()=>{
+        reject("Script has not been loaded")
+    }
+})
+}
+let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js")
+p1.then((value)=>{
+    console.log(value)
+}).then((value)=>{
+    console.log("Second script is ready")
+}).catch((error)=>{
+    console.log(error)
+})
+ */
+
+
+// let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log("resoled after 2 second")
+//         resolve(56);
+//     }, 2000);
+// })
+// promise.then((value) => {
+//     console.log(value)
+//     return new Promise((resolve, reject) =>{
+//         resolve("promise 2")
+//     })
+// }).then((value)=>{
+//     console.log("we are done");
+// })
+
