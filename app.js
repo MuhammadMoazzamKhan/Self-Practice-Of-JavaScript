@@ -505,19 +505,108 @@ p1.then((value)=>{
 })
  */
 
+/* 
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("resoled after 2 second")
+        resolve(56);
+    }, 2000);
+})
+promise.then((value) => {
+    console.log(value)
+    return new Promise((resolve, reject) =>{
+        resolve("promise 2")
+    })
+}).then((value)=>{
+    console.log("we are done");
+})
+ */
 
-// let promise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         console.log("resoled after 2 second")
-//         resolve(56);
-//     }, 2000);
-// })
-// promise.then((value) => {
-//     console.log(value)
-//     return new Promise((resolve, reject) =>{
-//         resolve("promise 2")
-//     })
-// }).then((value)=>{
-//     console.log("we are done");
-// })
+//    Promise API (Application Programming Interface)   //
+/* 
+let p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // resolve("value 1")
+        reject(new Error("I'm an Error"))
+    }, 1000);
+})
+let p2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // resolve("value 2")
+        reject(new Error("I'm an Error"))
+    }, 2000);
+})
+let p3 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // resolve("value 3")
+        reject(new Error("I'm an Error"))
 
+    }, 3000);
+})
+ */
+/* 
+let promise_all = Promise.all([p1, p2, p3])
+promise_all.then((value)=>{
+    console.log(value)
+})
+ */
+
+/* 
+let promise_allSettled = Promise.allSettled([p1, p2, p3])
+promise_allSettled.then((value)=>{
+    console.log(value)
+})
+ */
+
+/* 
+let promis_race = Promise.race([p1, p2, p3]);  // race method find fisrt resolve or reject value
+promis_race.then((value)=>{
+    console.log(value)
+})
+
+ */
+
+/* 
+let promise_any = Promise.any([p1, p2, p3]);    //any method find first resolve value . it didn't find error.If all promis are rejected , it'll throw Aggregate error like this (All promises were rejected)..
+promise_any.then((value) => {
+    console.log(value)
+})
+ */
+// Promise.resolve()
+// Promise.re)ject(
+
+
+//   async  and await   //
+
+/* 
+async function khan() {
+
+    let karachiWeather = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("karachi 25 deg")
+        }, 2000);
+    })
+
+    let lahoreWaather = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("lahore 32 deg")
+        }, 5000);
+    })
+    console.log("fetching karachi weathe please wait..")
+    let karachiW = await karachiWeather;
+    console.log("karachi weather has fetched "+ karachiW)
+    console.log("fetching lahore weathe please wait..")
+    let lahoreW = await lahoreWaather;
+    console.log("lahore weather has fetched "+ lahoreW)
+
+    return [karachiW, lahoreW]
+} 
+const pathan = async()=>{
+    let cherry = async ()=>{
+        console.log("I'm cherry")
+    } 
+    let p1 =  khan()
+    let p2 = cherry()
+}
+pathan()
+ */
